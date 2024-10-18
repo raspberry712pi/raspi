@@ -1,0 +1,34 @@
+Aim:- IOT based  web controlled Home Automation using Raspberry Pi
+
+Requirements:  Raspberry pi, 8 or 16 GB SD card, LAN/Ethernet cable, Power Supply, Jumper Wires, Breadboard,Monitor,LED.
+
+Step 1: download required libraries
+	sudo apt install python3-flask
+	sudo apt install idle3
+	sudo apt install idle
+
+Step 2: Make a folder hierarchy
+Home(main Folder)
+home_automation.py
+templates (folder for webpage template)
+index.html
+
+Step 3 : Code
+Code for index.html
+Code for home_automation.py
+Make sure to replace the host value with the ip address of the raspberry that you are using. 
+To find  ip address type the following command in terminal 
+ifconfig
+
+Step 4 : insure 3 leds connection with raspberry according to the GPIO pin no 2,3,4
+
+Step 5 : run the home_automation.py file and copy the localhost address 
+e.g : https://10.0.0.56/5010
+
+Step 6 : 
+Paste the copied address on the browser’s address bar and go
+
+
+Step 7 : 
+According to the index.html code buttons will be visible for turning on and off for the leds. 
+
