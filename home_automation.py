@@ -21,41 +21,41 @@ def index():
     return render_template('index.html')
 
 @app.route('/A')
-def ledOn():
+def led1On():
     GPIO.output(led1, 1)
     return render_template('index.html')
 
 @app.route('/a')
-def ledOff():
+def led1Off():
     data1="a"
     GPIO.output(led1, 0)
     return render_template('index.html')
 
 @app.route('/B')
-def ledOn():
+def led2On():
     data1="B"
     GPIO.output(led2, 1)
     return render_template('index.html')
 
 @app.route('/b')
-def ledOff():
+def led2Off():
     data1="b"
     GPIO.output(led2, 0)
     return render_template('index.html')
 
 @app.route('/C')
-def ledOn():
+def led3On():
     data1="C"
     GPIO.output(led3, 1)
     return render_template('index.html')
 
 @app.route('/c')
-def ledOff():
+def led3Off():
     data1="c"
     GPIO.output(led3, 0)
     return render_template('index.html')
 
 if __name__ == "__main__":
     print('starting....')
-    app.run(host='', port=5010)
+    app.run(host=''10.0.5.158”, port=5010)
 
